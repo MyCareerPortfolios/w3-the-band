@@ -191,7 +191,7 @@ body {
     position: relative;
     margin-top: var(--header-height); /* Dời element xuống 1 đoạn bằng chiều cao header để không bị che */
     padding-top: 50%; /* Tạo tỷ lệ hiển thị slider là 2:1 */
-    background: url(./assets/img/slider/slider-1.jpg) top center / cover no-repeat; /* Chưa học JS để làm slider chạy được nên dùng tạm slider tĩnh 1 hình */
+    background: url(/assets/img/slider/slider-1.jpg) top center / cover no-repeat; /* Chưa học JS để làm slider chạy được nên dùng tạm slider tĩnh 1 hình */
 }
 
 #slider .slider-content {
