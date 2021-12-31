@@ -1,0 +1,113 @@
+/* Responsive section */
+/* PC */
+/* @media (min-width: 1
+024px) { */
+    /* Nội dung viết */
+/* } */
+
+/* Table và mobile */
+@media (max-width: 1023px) {
+    /* Tạo trải nghiệm tốt cho người dùng (UX) */
+    
+    /* Nút nhấn to để ngón tay dễ bấm. Nên cao 42-48px */
+    #nav .subnav a {
+        padding-top: 4px; /* Chiều cao tối thiều giữa các hàng chữ để ngón tay có thể nhấn trên mobile là 42-48px */
+        padding-bottom: 4px;
+    }
+
+    .tour-section .place-buy-btn {
+        padding: 15px 16px;
+    }
+
+    .contact-form-control {
+        padding: 14px;
+    }
+
+    .contact-info {
+        line-height: 2;
+    }
+
+    /* To để tránh nhấn nhầm các mạng xã hội */
+    #footer .social-list {
+        font-size: 48px;
+    }
+
+    #footer .social-list i {
+        margin: 0 8px;
+    }
+
+    /* Link thẻ a khó nhấn nên tăng phạm vi bấm */
+    #footer .copyright a {
+        padding: 16px 0;
+        display: inline-block;
+    }
+}
+
+/* Table */
+/* @media (min-width: 741px) and (max-width: 1023px) { */
+    /* Nội dung viết */
+/* } */
+
+/* Mobile */
+@media (max-width: 740px) { 
+    #header {
+        overflow: hidden; /* Đảm bảo nav hiển thị không vượt khỏi phạm vi header */
+    }
+    
+    /* Để nav hiện hết chiều ngang và có thể bấm vào chỗ trống */
+    #nav {
+        display: block;
+    }
+    
+    /* Để menu hiện theo chiều dọc */
+    #nav > li {
+        display: block; 
+    }
+
+    #nav .subnav {
+        position: initial; /* Trả vị trí mặc định để có thể hiện menu con trên mobile */
+        background-color: var(--header-background-color);
+    }
+
+    #nav .subnav a {
+        color: var(--nav-text-color);
+        padding-left: 40px; /* để menu phụ thụt vào */
+    }
+
+    /* Để nhấn vào khu vực trống giữa Home và mobile menu không trở về home */
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    /* Ẩn nút search */
+    .header-search-btn {
+        display: none;
+    }
+
+    /* CSS nút mobile menu */
+    .header-mobile-menu {
+        display: block;
+        color: var(--nav-text-color);
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+        line-height: 46.5px;
+        text-align: center;
+    }
+    .header-mobile-menu:hover {
+        color: var(--nav-text-hover-color);
+        background-color: var(--nav-background-hover);
+    }
+
+    /* Cách dùng lại code để viết ít */
+    .s-width-full, /* hiện thị 100%, dùng cho element không phải cột */
+    .sm-column-1 { /* Màn hình nhỏ có 1 cột */
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .contact-info {
+        margin-bottom: 32px;
+    }
+}
