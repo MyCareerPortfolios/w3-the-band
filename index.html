@@ -4,9 +4,9 @@
         <title>The Band</title>     <!-- Thể hiện tên trang web muốn hiển thị trên tab của trình duyệt và GG -->
         <meta charset="utf-8">  <!-- Thẻ hỗ trợ sử dụng được tiếng việt trong web -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/css/style.css"> <!-- Thẻ liên kết stype CSS theo kiểu External -->
+        <link rel="stylesheet" href="./assets/css/style.css"> <!-- Thẻ liên kết style CSS theo kiểu External -->
         <link rel="stylesheet" href="./assets/css/responsive.css"> <!-- Thẻ liên kết Responsive theo kiểu External -->
-        <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css"> <!-- Thẻ liên kết file CSS các incon Themify -->
+        <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css"> <!-- Thẻ liên kết file CSS các icon Themify -->
         <link rel="icon" href="https://getbootstrap.com//docs/5.1/assets/img/favicons/favicon-16x16.png" type="image/png" sizes="16x16"> <!--Icon cho tan trang web-->
 
     </head>
@@ -15,7 +15,7 @@
         <div id="main">
             <div id="header" class="js-header">
                 <!-- Begin: nav -->
-                <ul id="nav"> <!--Viết nhanh khung nhanh cho Nav: ul#nav>li*5>a-->
+                <ul id="nav"> <!--Viết nhanh cho Nav: ul#nav>li*5>a-->
                     <!-- Trong href đặt ID của div muốn trỏ tới khi nhấn vào menu -->
                     <li><a href="#">Home</a></li>
                     <li><a href="#band">Band</a></li>
@@ -100,7 +100,7 @@
                                     <h4 class="place-content-heading">New York</h4>
                                     <p class="place-content-time">Fri 27 Nov 2016</p>
                                     <p class="place-content-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button class="place-buy-btn js-buy-ticket s-width-full text-white">Buy tickets</button><!--class dùng để bắt hành động click chuột của người dùng và viết Java cript-->
+                                    <button class="place-buy-btn js-buy-ticket s-width-full sm-btn-text-size text-white">Buy tickets</button><!--class dùng để bắt hành động click chuột của người dùng và viết Java script-->
                                 </div>
                             </div>
                             <div class="column column-3 sm-column-1">
@@ -109,7 +109,7 @@
                                     <h4 class="place-content-heading">Paris</h4>
                                     <p class="place-content-time">Sat 28 Nov 2016</p>
                                     <p class="place-content-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button class="place-buy-btn js-buy-ticket s-width-full text-white">Buy tickets</button><!--class dùng để bắt hành động click chuột của người dùng và viết Java cript-->
+                                    <button class="place-buy-btn js-buy-ticket s-width-full sm-btn-text-size text-white">Buy tickets</button><!--class dùng để bắt hành động click chuột của người dùng và viết Java script-->
                                 </div>
                             </div>
                             <div class="column column-3 sm-column-1">
@@ -118,7 +118,7 @@
                                     <h4 class="place-content-heading">San Francisco</h4>
                                     <p class="place-content-time">Sun 29 Nov 2016</p>
                                     <p class="place-content-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button class="place-buy-btn js-buy-ticket s-width-full text-white">Buy tickets</button><!--class dùng để bắt hành động click chuột của người dùng và viết Java cript-->
+                                    <button class="place-buy-btn js-buy-ticket s-width-full sm-btn-text-size text-white">Buy tickets</button><!--class dùng để bắt hành động click chuột của người dùng và viết Java script-->
                                 </div>
                             </div>
                         </div>
@@ -153,7 +153,7 @@
                                         <input type="text" class="contact-form-control" required placeholder="Message">
                                     </div>
                                 </div>
-                                <input type="submit" class="mt-16 contact-btn s-width-full" value="SEND">
+                                <input type="submit" class="mt-16 contact-btn s-width-full sm-btn-text-size" value="SEND">
                             </div>
                         </div>
                     </form>
@@ -241,7 +241,7 @@
             BuyTicketModal.addEventListener('click',function () {
                 BuyTicketModal.classList.remove('open'); // có thể viết luôn hàm tại đây để thực thi và không cần đặt tên hàm
             })
-            // Ngăn chặn hiệu ứng nổi bọt để nhấn vào khu vực contaiter không bị tắt modal
+            // Ngăn chặn hiệu ứng nổi bọt để nhấn vào khu vực container không bị tắt modal
             BuyTicketModalContainer.addEventListener('click', function (event) {
                 event.stopPropagation();
             })
@@ -256,7 +256,7 @@
             const show_mobile_menu = document.querySelector('.js-header-mobile-menu');
             var click_menu_items = document.querySelectorAll('#nav li a[href*="#"]');//Lấy tất cả thẻ a có href là dấu #
             var header_height = change_header.clientHeight; //Lấy chiều cao hiện hữu của header
-            //show_mobile_menu.addEventListener('click',function () {alert('sssf')}) // Cách bắt click như ticket modal
+            //show_mobile_menu.addEventListener('click',function () {alert('ss')}) // Cách bắt click như ticket modal
             // Cách bắt click thứ 2
             show_mobile_menu.onclick = function () {
                 // Nếu chiều cao header hiện tại bằng ban đầu thì mở menu
@@ -270,7 +270,7 @@
             // Tự động đóng khi chọn menu
             for (const click_menu_item of click_menu_items) {
                 click_menu_item.onclick = function (event) {
-                    var have_sub_menu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');//Kiểm tra có munu con không?
+                    var have_sub_menu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');//Kiểm tra có menu con không?
                     // bằng cách xem có menu item vừa click có anh em liền về và có class là subnav?
                     if (have_sub_menu) { // Có thể viết gọn hơn bằng cách đưa biến vào () của If
                         event.preventDefault(); //nếu đúng thì bỏ qua hành động không làm gì cả. Tức không chạy href

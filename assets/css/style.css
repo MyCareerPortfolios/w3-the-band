@@ -396,7 +396,7 @@ body {
     padding: 12px 17px;
     float: right;
     cursor: pointer;    
-    /* 2 câu lệnh để nút send không bị lỗi trên safari */
+    /* 2 câu lệnh prefix để nút send không bị lỗi trên safari */
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;

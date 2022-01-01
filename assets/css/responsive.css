@@ -1,17 +1,20 @@
 /* Responsive section */
 /* PC */
-/* @media (min-width: 1
-024px) { */
+/* @media (min-width: 64em) { */ /* min-width: 1024px */
     /* Nội dung viết */
 /* } */
 
 /* Table và mobile */
-@media (max-width: 1023px) {
+@media (max-width: 63.9375em) { /* max-width: 1023px */
     /* Tạo trải nghiệm tốt cho người dùng (UX) */
-    
+ 
+    /* Font size tăng lớn để dễ nhìn trên mobile */
+    .sm-btn-text-size {
+        font-size: 16px;
+    }
     /* Nút nhấn to để ngón tay dễ bấm. Nên cao 42-48px */
     #nav .subnav a {
-        padding-top: 4px; /* Chiều cao tối thiều giữa các hàng chữ để ngón tay có thể nhấn trên mobile là 42-48px */
+        padding-top: 4px; /* Chiều cao tối thiểu giữa các hàng chữ để ngón tay có thể nhấn trên mobile là 42-48px */
         padding-bottom: 4px;
     }
 
@@ -29,7 +32,7 @@
 
     /* To để tránh nhấn nhầm các mạng xã hội */
     #footer .social-list {
-        font-size: 48px;
+        font-size: 32px;
     }
 
     #footer .social-list i {
@@ -44,12 +47,12 @@
 }
 
 /* Table */
-/* @media (min-width: 741px) and (max-width: 1023px) { */
+/* @media (min-width: 46.25em) and (max-width: 63.9375em) { */ /* min-width: 740px */
     /* Nội dung viết */
 /* } */
 
 /* Mobile */
-@media (max-width: 740px) { 
+@media (max-width: 46.1875em) {  /* max-width: 739px */
     #header {
         overflow: hidden; /* Đảm bảo nav hiển thị không vượt khỏi phạm vi header */
     }
